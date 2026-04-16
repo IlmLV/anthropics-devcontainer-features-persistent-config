@@ -7,7 +7,7 @@ Installs the Claude Code CLI globally
 
 ```json
 "features": {
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
+    "ghcr.io/IlmLV/anthropics-devcontainer-features-persistent-config/claude-code:1": {}
 }
 ```
 
@@ -60,12 +60,8 @@ If your container already has Node.js installed (for example, a container based 
 
 When using with containers that have nvm pre-installed, you can use the Claude Code feature directly, and it will use the existing Node.js installation.
 
-## Persistent configuration
 
-This feature automatically mounts a named volume at `/claude-config` and sets `CLAUDE_CONFIG_DIR=/claude-config` in the container user's shell profiles. This consolidates all Claude data — including `~/.claude.json` — into a single persisted location, so credentials, settings, and login state survive container rebuilds with no manual configuration required.
-
-The `postCreateCommand` provided by this feature fixes ownership of the volume directory after mounting.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/anthropics/devcontainer-features/blob/main/src/claude-code/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/IlmLV/anthropics-devcontainer-features-persistent-config/blob/main/src/claude-code/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
